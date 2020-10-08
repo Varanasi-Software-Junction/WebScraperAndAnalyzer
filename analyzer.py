@@ -64,13 +64,6 @@ def GetImagesAlt(html):
         n=n+1
     return headings
         
-x="""
-<div>hello</div>
-<div>Hi</div>
-"""
 
-
-print(x)
-x=GetDivs(x)
-for item1,item2 in x.items():
-    print(item2.text)
+#scraper.title.string
+#    scraper.div.s````````tring
