@@ -21,7 +21,7 @@ html="""
 """
 #print(html)
 scraper = bs(html, 'html.parser')
-title=scraper.find_all("title")
+title=scraper.find_all("body")
 item=title[0]
 print(item)
 print(item.text)

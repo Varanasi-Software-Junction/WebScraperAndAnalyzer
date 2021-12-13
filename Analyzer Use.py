@@ -5,7 +5,8 @@ import Training as t
 from flask import Flask,render_template
 app = Flask(__name__)
 #d={2:"Mumbai",1:"Jaipur",3:"Varanasi"}
-url="http://varanasikshetra.com"
+#url="http://varanasikshetra.com"
+url="http://rudra.tours"
 data=dd.downloadUrl(url)
 divs=an.GetDivs(data)
 pics=an.GetImages(data,url)

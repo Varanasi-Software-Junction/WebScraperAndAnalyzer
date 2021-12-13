@@ -27,5 +27,7 @@ def SaveImageFromUrlToFile(imageurl,filename):
 
 
 
-
+#url="https://www.codechef.com/"
+#data=downloadUrl(url)
+#print(data)
     

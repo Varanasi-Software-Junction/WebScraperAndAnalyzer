@@ -38,8 +38,8 @@ def get_all_website_links(url):
             continue
         # join the URL if it's relative (not absolute link)
         href = urljoin(url, href)
-        parsed_href = urlparse(href)
-        # remove URL GET parameters, URL fragments, etc.
+        parsed_href = urlparse(href) # URL fragments, etc.
+        # remove URL GET parameters,
         href = parsed_href.scheme + "://" + parsed_href.netloc + parsed_href.path
         if not is_valid(href):
             # not a valid URL

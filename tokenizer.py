@@ -85,7 +85,7 @@ def Removestopword(data):
     for token in tokens:
         if token in stops:
             tokens.remove(token)
-    return tokens
+    return token
 def frerstopword(data):
 # this fuction produce the frequencies of words(after removal of stop words)
     text=Removestopword(data)
@@ -98,6 +98,7 @@ def Rplot(data):
     text=nltk.FreqDist(words)
    # print(text.values())
    # print(text.keys())
+    print(text)
     n=len(text)
     pltt=text.plot(n,cumulative=False)
     return pltt
@@ -122,7 +123,7 @@ def trainingset():
     m=t.training()
     return m
     x=trainingset()
-    print(x)   
+    print(x)
 def intersectionset(data):
 #this fuction produce the intersection of  training set and getset
     s1=trainingset()
@@ -160,7 +161,7 @@ def interplot(data):
     words=freinterset(data)
     text=nltk.FreqDist(words)
    # print(text.values())
-   # print(text.keys())
+   # print(text.key.s())
     n=len(text)
     pltt=text.plot(n,cumulative=False)
     return pltt
@@ -208,9 +209,10 @@ def getsaveFullplot(data,trainingset):
 #y=dict(data)
 #y=interplot2(data)
 #print(y)
-#data=dd.downloadUrl(url)
-#y=Rplot(data)
-#print(y)
+url = "https://varanasi-software-junction.business.site/"
+data=dd.downloadUrl(url)
+y=Rplot(data)
+print(y)
 #text=stopwords(data)
 #data='''My My name . name is vishal'''
 #m=wordswithfrequencies(data)
